@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cursos — EneaSpirit Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F5EFE1;--gold:#C9A961;--gold-light:#EFE4D2;--ink:#1a1410;--ink-soft:#4a4138;--card:#fff;--border:rgba(201,169,97,0.28);--muted:#8a7c5f}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.nav .brand{display:flex;align-items:center;gap:12px}
+.nav .brand img{width:38px;height:38px;object-fit:contain}
+.nav .brand .word{font-family:'Playfair Display',serif;font-weight:700;letter-spacing:4px;font-size:16px}
+.nav a.back{text-decoration:none;color:var(--ink-soft);font-size:13px;letter-spacing:1px}
+.nav a.back:hover{color:var(--gold)}
+.head{text-align:center;padding:54px 0 36px}
+.head .eyebrow{font-weight:700;font-size:12px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.head h1{font-family:'Playfair Display',serif;font-size:40px;margin-bottom:14px}
+.head p{max-width:580px;margin:0 auto;color:var(--ink-soft);line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;padding-bottom:60px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.head h1{font-size:30px}}
+.course{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;box-shadow:0 2px 14px rgba(26,20,16,.05);position:relative}
+.course.anchor{border-color:var(--gold);box-shadow:0 4px 20px rgba(201,169,97,.18)}
+.course .n{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);font-size:15px;margin-bottom:6px}
+.course h3{font-family:'Playfair Display',serif;font-size:20px;margin-bottom:10px;line-height:1.3}
+.course p{color:var(--ink-soft);line-height:1.6;font-size:14px;margin-bottom:16px}
+.course .meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tag{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:20px}
+.tag.soon{background:var(--gold-light);color:var(--muted)}
+.tag.anchor{background:var(--gold);color:var(--ink)}
+.tag.tema{background:rgba(138,124,95,.12);color:var(--muted)}
+.footer{background:var(--ink);color:rgba(245,239,225,.6);text-align:center;padding:34px 0;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="nav">
+    <div class="brand"><img src="assets/es-logo-icon-academy.png" alt=""><span class="word">ENEASPIRIT ACADEMY</span></div>
+    <a class="back" href="academy.html">← Academy</a>
+  </div>
+  <div class="head">
+    <div class="eyebrow">Academy · Cursos</div>
+    <h1>Cursos EneaSpirit</h1>
+    <p>Cursos áudio-narrados e workshops construídos a partir da biblioteca de 16.000+ obras —
+    ao teu ritmo, sem aulas ao vivo. Em preparação; vão abrindo ao longo dos próximos meses.</p>
+  </div>
+  <div class="grid">
+
+    <div class="course anchor">
+      <div class="n">Curso âncora</div>
+      <h3>Eneagrama & 4º Caminho — O Mapa do Autoconhecimento</h3>
+      <p>Os 9 tipos, as tríades, a sombra e o caminho de integração — cruzado com o 4º Caminho de Gurdjieff. O coração da jornada EneaSpirit.</p>
+      <div class="meta"><span class="tag anchor">Primeiro a abrir</span><span class="tag tema">Eneagrama</span></div>
+    </div>
+
+    <div class="course">
+      <h3>Projeção Astral & Sonhos Lúcidos</h3>
+      <p>Técnicas, segurança e prática para a viagem fora do corpo e o domínio do sonho consciente.</p>
+      <div class="meta"><span class="tag soon">Em breve</span><span class="tag tema">Energia · Chakras</span></div>
+    </div>
+
+    <div class="course">
+      <h3>Magia Prática para Iniciantes</h3>
+      <p>Fundamentos, ética e rituais simples — a magia como linguagem simbólica da transformação interior.</p>
+      <div class="meta"><span class="tag soon">Em breve</span><span class="tag tema">Magia & Rituais</span></div>
+    </div>
+
+    <div class="course">
+      <h3>Astrologia Esotérica & Tarot</h3>
+      <p>Os dois grandes sistemas oraculares como mapas da alma — ler o céu e as cartas como espelho interior.</p>
+      <div class="meta"><span class="tag soon">Em breve</span><span class="tag tema">Oráculos</span></div>
+    </div>
+
+    <div class="course">
+      <h3>A Sombra — O Caminho da Integração</h3>
+      <p>Reconhecer, dialogar e integrar o que negamos. Do chumbo ao ouro, no plano psicológico.</p>
+      <div class="meta"><span class="tag soon">Em breve</span><span class="tag tema">Autoconhecimento</span></div>
+    </div>
+
+    <div class="course">
+      <h3>Consciência & Ciência — Uma Ponte para Céticos</h3>
+      <p>Física quântica, ressonância e consciência — a espiritualidade explicada para mentes racionais.</p>
+      <div class="meta"><span class="tag soon">Em breve</span><span class="tag tema">Filosofia</span></div>
+    </div>
+
+  </div>
+</div>
+<div class="footer">EneaSpirit Academy · Cursos · A Espiritualidade da Matéria</div>
+</body>
+</html>
