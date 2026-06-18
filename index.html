@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ENEASPIRIT ACADEMY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream:#F5EFE1;
+  --gold:#C9A961;
+  --gold-light:#EFE4D2;
+  --ink:#1a1410;
+  --ink-soft:#4a4138;
+  --text-soft:#cfc6b8;
+  --muted-gold:#8a7c5f;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { font-family:'Inter',sans-serif; background:var(--cream); color:var(--ink); }
+.wrap { max-width:1120px; margin:0 auto; padding:0 40px; }
+
+/* NAV */
+.nav { display:flex; align-items:center; justify-content:space-between; padding:28px 0; }
+.nav .brand { display:flex; align-items:center; gap:14px; }
+.nav .brand img { width:40px; height:40px; object-fit:contain; }
+.nav .brand .word { font-family:'Playfair Display',serif; font-weight:700; font-size:18px; letter-spacing:5px; color:var(--ink); }
+.nav .links { display:flex; gap:36px; font-size:14px; font-weight:600; letter-spacing:1px; color:var(--ink-soft); }
+.nav .links a { color:var(--ink-soft); text-decoration:none; }
+.nav .cta { background:var(--ink); color:var(--cream); padding:12px 26px; border-radius:4px; font-weight:700; font-size:13px; letter-spacing:2px; text-transform:uppercase; text-decoration:none; }
+
+/* HERO */
+.hero { background:var(--ink); color:var(--cream); padding:90px 0 110px; text-align:center; position:relative; overflow:hidden; }
+.hero .rings { position:absolute; top:50%; left:50%; width:1400px; height:1400px; transform:translate(-50%,-50%); pointer-events:none; }
+.hero .rings .ring { position:absolute; border:1px solid rgba(201,169,97,0.10); border-radius:50%; }
+.hero .rings .r1 { inset:0; } .hero .rings .r2 { inset:120px; } .hero .rings .r3 { inset:260px; } .hero .rings .r4 { inset:430px; }
+.hero .inner { position:relative; z-index:2; max-width:760px; margin:0 auto; }
+.hero .icon { width:120px; height:120px; margin:0 auto 32px; object-fit:contain; }
+.hero .eyebrow { font-weight:700; font-size:13px; letter-spacing:6px; text-transform:uppercase; color:var(--gold); margin-bottom:22px; }
+.hero h1 { font-family:'Playfair Display',serif; font-weight:700; font-size:46px; line-height:1.35; margin-bottom:24px; }
+.hero h1 .accent { color:var(--gold); font-style:italic; }
+.hero p.sub { font-size:17px; line-height:1.75; font-weight:300; color:var(--text-soft); max-width:600px; margin:0 auto 38px; }
+.hero .ctas { display:flex; gap:18px; justify-content:center; flex-wrap:wrap; }
+.btn-primary { display:inline-block; background:var(--gold); color:var(--ink); padding:18px 42px; border-radius:4px; font-weight:700; letter-spacing:3px; text-decoration:none; font-size:13px; text-transform:uppercase; }
+.btn-secondary { display:inline-block; border:1px solid rgba(245,239,225,0.35); color:var(--cream); padding:18px 42px; border-radius:4px; font-weight:700; letter-spacing:3px; text-decoration:none; font-size:13px; text-transform:uppercase; }
+
+/* SECTION TITLES */
+.section { padding:90px 0; }
+.section-head { text-align:center; max-width:620px; margin:0 auto 56px; }
+.section-head .eyebrow { font-weight:700; font-size:12px; letter-spacing:5px; text-transform:uppercase; color:var(--muted-gold); margin-bottom:14px; }
+.section-head h2 { font-family:'Playfair Display',serif; font-weight:700; font-size:32px; margin-bottom:14px; }
+.section-head p { font-size:16px; line-height:1.7; font-weight:300; color:var(--ink-soft); }
+
+/* FEATURES */
+.features { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.feature-card { background:#fff; border:1px solid rgba(201,169,97,0.25); border-radius:10px; padding:40px 32px; text-align:center; display:flex; flex-direction:column; align-items:center; }
+.feature-card .ficon { width:64px; height:64px; border:2px solid var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:24px; color:var(--gold); }
+.feature-card .ficon svg { width:28px; height:28px; }
+.feature-card h3 { font-family:'Playfair Display',serif; font-weight:700; font-size:21px; margin-bottom:12px; }
+.feature-card p { font-size:14.5px; line-height:1.7; font-weight:300; color:var(--ink-soft); margin-bottom:26px; flex-grow:1; }
+.tag-live { display:inline-block; background:var(--ink); color:var(--cream); padding:13px 30px; border-radius:4px; font-weight:700; letter-spacing:2px; text-decoration:none; font-size:12px; text-transform:uppercase; }
+.tag-soon { display:inline-block; border:1px solid rgba(138,124,95,0.4); color:var(--muted-gold); padding:13px 30px; border-radius:4px; font-weight:700; letter-spacing:2px; font-size:12px; text-transform:uppercase; }
+
+/* PODCAST */
+.podcast-section { background:var(--gold-light); }
+.platforms-row { display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin-top:10px; }
+.platform-chip { display:flex; align-items:center; gap:10px; background:#fff; border:1px solid rgba(201,169,97,0.3); border-radius:30px; padding:12px 24px; font-size:13px; font-weight:600; color:var(--ink-soft); }
+.platform-chip .dot { width:8px; height:8px; border-radius:50%; background:var(--muted-gold); }
+.platform-chip.soon { color:var(--muted-gold); }
+
+/* FOOTER */
+.footer { background:var(--ink); color:var(--text-soft); padding:64px 0 40px; }
+.footer-grid { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:48px; margin-bottom:48px; }
+.footer .flogo { display:flex; align-items:center; gap:12px; margin-bottom:14px; }
+.footer .flogo img { width:36px; height:36px; object-fit:contain; }
+.footer .flogo .word { font-family:'Playfair Display',serif; font-weight:700; font-size:16px; letter-spacing:5px; color:var(--cream); }
+.footer .ftag { color:var(--gold); font-size:11px; letter-spacing:3px; text-transform:uppercase; margin-bottom:18px; }
+.footer .fdesc { font-size:14px; line-height:1.75; font-weight:300; max-width:320px; }
+.footer h4 { font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:18px; }
+.footer ul { list-style:none; }
+.footer li { margin-bottom:11px; font-size:14px; }
+.footer a { color:var(--text-soft); text-decoration:none; }
+.footer .legal { border-top:1px solid rgba(245,239,225,0.08); padding-top:28px; font-size:12.5px; line-height:1.8; color:var(--muted-gold); }
+.footer .legal .copy { margin-top:14px; font-size:12px; letter-spacing:1px; }
+
+@media (max-width: 860px) {
+  .features { grid-template-columns:1fr; }
+  .footer-grid { grid-template-columns:1fr; gap:36px; }
+  .hero h1 { font-size:34px; }
+  .nav .links { display:none; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="wrap">
+  <div class="nav">
+    <div class="brand">
+      <img src="assets/es-logo-icon-academy.png" alt="">
+      <span class="word">ENEASPIRIT ACADEMY</span>
+    </div>
+    <div class="links">
+      <a href="#comunidade">Comunidade</a>
+      <a href="#biblioteca">Biblioteca</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#podcast">Podcast</a>
+    </div>
+    <a class="cta" href="https://t.me/eneaspirit">Entrar</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="rings"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="ring r4"></div></div>
+  <div class="wrap">
+    <div class="inner">
+      <img class="icon" src="assets/es-logo-icon-academy.png" alt="">
+      <div class="eyebrow">ENEASPIRIT ACADEMY</div>
+      <h1>Biblioteca de Conhecimento, <span class="accent">Comunidade</span> e Cursos</h1>
+      <p class="sub">Acesso a mais de 16.000 PDFs organizados por tema, conversa semanal com
+      a comunidade, e cursos para aprofundar. Sem aulas ao vivo, sem presença —
+      pura destilação e suporte.</p>
+      <div class="ctas">
+        <a class="btn-primary" href="https://t.me/eneaspirit">Entrar na Comunidade →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class="section" id="comunidade">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Como Começar</div>
+      <h2>Três Portas de Entrada</h2>
+      <p>Comunidade, biblioteca e cursos — cada um no seu próprio ritmo.</p>
+    </div>
+    <div class="features">
+
+      <div class="feature-card" id="comunidade-card">
+        <div class="ficon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </div>
+        <h3>Comunidade ENEASPIRIT ACADEMY</h3>
+        <p>Grupo público (entrada gratuita) e grupo privado STUDENTS para membros.
+        Conversa semanal, suporte de práticas e conexão com a jornada.</p>
+        <a class="tag-live" href="https://t.me/eneaspirit">Entrar →</a>
+      </div>
+
+      <div class="feature-card" id="biblioteca">
+        <div class="ficon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4.5C2 4.5 5 3 8 3s6 1.5 6 1.5v15S11 18 8 18s-6 1.5-6 1.5v-15z"/><path d="M22 4.5C22 4.5 19 3 16 3s-6 1.5-6 1.5v15s3-1.5 6-1.5 6 1.5 6 1.5v-15z"/></svg>
+        </div>
+        <h3>Biblioteca PDF + Compêndios</h3>
+        <p>Mais de 16.000 PDFs sobre Eneagrama, Gnose, Chakras, Projeção Astral e
+        muito mais — organizados por tema em compêndios.</p>
+        <span class="tag-soon">Em breve</span>
+      </div>
+
+      <div class="feature-card" id="cursos">
+        <div class="ficon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14a9 9 0 0 1 18 0"/><rect x="1" y="14" width="6" height="7" rx="2"/><rect x="17" y="14" width="6" height="7" rx="2"/></svg>
+        </div>
+        <h3>Cursos + Áudio</h3>
+        <p>Cursos online, workshops e conteúdos audio-narrados, para aprofundar a
+        jornada ao teu próprio ritmo.</p>
+        <span class="tag-soon">Em breve</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- PODCAST -->
+<div class="section podcast-section" id="podcast">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Ouve Connosco</div>
+      <h2>O Podcast ENEASPIRIT</h2>
+      <p>Conversas semanais sobre Eneagrama, Gnose, astrologia, energia, magia prática
+      e os grandes temas da jornada espiritual — e a nova secção "EneaSpirit BOOKS",
+      um livro da biblioteca por semana.</p>
+    </div>
+    <div class="platforms-row">
+      <div class="platform-chip soon"><span class="dot"></span>Spotify — em breve</div>
+      <div class="platform-chip soon"><span class="dot"></span>Apple Podcasts — em breve</div>
+      <div class="platform-chip soon"><span class="dot"></span>YouTube Music — em breve</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="flogo">
+          <img src="assets/es-logo-icon-academy.png" alt="">
+          <span class="word">ENEASPIRIT</span>
+        </div>
+        <div class="ftag">Espiritualidade & Autoconhecimento</div>
+        <p class="fdesc">Biblioteca de conhecimento, comunidade e cursos para quem
+        quer destilar conhecimento espiritual à sua maneira — sem aulas ao vivo,
+        sem presença.</p>
+      </div>
+      <div>
+        <h4>Contactos</h4>
+        <ul>
+          <li><a href="https://t.me/eneaspirit">Telegram — Comunidade</a></li>
+          <li><a href="https://eneaspirit.substack.com">Newsletter — Substack</a></li>
+          <li><a href="mailto:eneaspirit@eneaspirit.com">eneaspirit@eneaspirit.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes Sociais</h4>
+        <ul>
+          <li><a href="https://instagram.com/eneaspirit">Instagram</a></li>
+          <li><a href="https://facebook.com/eneaspirit">Facebook</a></li>
+          <li><a href="https://tiktok.com/@eneaspiritreborn">TikTok</a></li>
+          <li><a href="https://youtube.com/@eneaspirit">YouTube</a></li>
+          <li><a href="https://pinterest.com/eneaspirit">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      Os conteúdos da ENEASPIRIT ACADEMY têm fins educativos e de desenvolvimento
+      pessoal e espiritual. Não substituem acompanhamento médico, psicológico,
+      terapêutico ou financeiro profissional.
+      <div class="copy">© 2026 ENEASPIRIT ACADEMY — Every week, deeper.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
