@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EneaSpirit Academy — Área de Membros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F5EFE1;--gold:#C9A961;--gold-light:#EFE4D2;--ink:#1a1410;--ink-soft:#4a4138;--card:#fff;--border:rgba(201,169,97,0.28);--muted:#8a7c5f}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.nav .brand{display:flex;align-items:center;gap:12px}
+.nav .brand img{width:40px;height:40px;object-fit:contain}
+.nav .brand .word{font-family:'Playfair Display',serif;font-weight:700;letter-spacing:4px;font-size:17px}
+.nav a.back{text-decoration:none;color:var(--ink-soft);font-size:13px;letter-spacing:1px}
+.nav a.back:hover{color:var(--gold)}
+.hero{background:var(--ink);color:var(--cream);text-align:center;padding:80px 0 90px;position:relative;overflow:hidden}
+.hero .ring{position:absolute;border:1px solid rgba(201,169,97,.14);border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%)}
+.hero .r1{width:420px;height:420px}.hero .r2{width:640px;height:640px}.hero .r3{width:880px;height:880px}
+.hero .in{position:relative;z-index:1}
+.hero img{width:96px;height:96px;object-fit:contain;margin-bottom:22px}
+.hero .eyebrow{font-weight:700;font-size:13px;letter-spacing:6px;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.hero h1{font-family:'Playfair Display',serif;font-size:46px;margin-bottom:16px}
+.hero h1 .ac{color:var(--gold);font-style:italic}
+.hero p{max-width:560px;margin:0 auto 30px;color:rgba(245,239,225,.8);line-height:1.7;font-size:16px}
+.btn{display:inline-block;background:var(--gold);color:var(--ink);padding:16px 40px;border-radius:4px;font-weight:700;letter-spacing:3px;text-transform:uppercase;text-decoration:none;font-size:13px}
+.btn.ghost{background:transparent;border:1px solid rgba(245,239,225,.35);color:var(--cream);margin-left:10px}
+.sec{padding:72px 0}
+.sec-head{text-align:center;margin-bottom:40px}
+.sec-head .eyebrow{font-weight:700;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.sec-head h2{font-family:'Playfair Display',serif;font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.hero h1{font-size:34px}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:30px;box-shadow:0 2px 14px rgba(26,20,16,.05)}
+.card .ico{width:56px;height:56px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);margin-bottom:18px}
+.card h3{font-family:'Playfair Display',serif;font-size:19px;margin-bottom:8px}
+.card p{color:var(--ink-soft);line-height:1.6;font-size:14px;margin-bottom:14px}
+.soon{display:inline-block;background:var(--gold-light);color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:20px}
+.footer{background:var(--ink);color:rgba(245,239,225,.6);text-align:center;padding:36px 0;font-size:12px;letter-spacing:.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="nav">
+    <div class="brand"><img src="assets/es-logo-icon-academy.png" alt=""><span class="word">ENEASPIRIT ACADEMY</span></div>
+    <a class="back" href="index.html">← EneaSpirit</a>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+  <div class="wrap"><div class="in">
+    <img src="assets/es-logo-icon-academy.png" alt="">
+    <div class="eyebrow">Área de Membros</div>
+    <h1>EneaSpirit <span class="ac">Academy</span></h1>
+    <p>A tua jornada de autoconhecimento num só lugar: cursos, comunidade de alunos,
+    biblioteca completa e o teu progresso. Entras uma vez — tens tudo dentro.</p>
+    <a class="btn" href="#areas">Entrar</a>
+    <a class="btn ghost" href="index.html">Voltar ao site</a>
+  </div></div>
+</div>
+
+<div class="sec" id="areas">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Dentro da Academy</div>
+      <h2>As tuas áreas</h2>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14a9 9 0 0 1 18 0"/><rect x="1" y="14" width="6" height="7" rx="2"/><rect x="17" y="14" width="6" height="7" rx="2"/></svg></div>
+        <h3>Cursos</h3>
+        <p>Cursos áudio-narrados e workshops sobre Eneagrama, Gnose, Projeção Astral e mais — ao teu ritmo.</p>
+        <span class="soon">Em breve</span>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Comunidade de Alunos</h3>
+        <p>Grupo privado de membros — conversa semanal, suporte de práticas e partilha da jornada.</p>
+        <span class="soon">Em breve</span>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4.5C2 4.5 5 3 8 3s6 1.5 6 1.5v15S11 18 8 18s-6 1.5-6 1.5v-15z"/><path d="M22 4.5C22 4.5 19 3 16 3s-6 1.5-6 1.5v15s3-1.5 6-1.5 6 1.5 6 1.5v-15z"/></svg></div>
+        <h3>Biblioteca Completa</h3>
+        <p>Acesso aos 16.000+ PDFs organizados por tema, com os compêndios e fichas de leitura.</p>
+        <span class="soon">Em breve</span>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <h3>O Meu Progresso</h3>
+        <p>O teu painel pessoal: cursos começados, práticas, e o caminho do chumbo ao ouro.</p>
+        <span class="soon">Em breve</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">EneaSpirit Academy · Área de membros · A Espiritualidade da Matéria</div>
+</body>
+</html>
